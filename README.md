@@ -62,7 +62,7 @@ ggplot(ToothGrowth, aes(factor(dose), len, fill = supp)) +
    devtools::check()
    pkgdown::build_site()
    ```
-6. **Turn on GitHub Pages** — Settings → Pages → *Deploy from a branch* → `gh-pages` (created by the first pkgdown workflow run).
+6. **Turn on GitHub Pages** — Settings → Pages → Source: **GitHub Actions**. The pkgdown workflow publishes the site on every push to `main`.
 
 ---
 
