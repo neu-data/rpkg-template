@@ -1,0 +1,9 @@
+pandoc: 3.8.3
+pkgdown: 2.2.1
+pkgdown_sha: ~
+articles:
+  mypackage: mypackage.html
+last_built: 2026-10-02T16:45Z
+urls:
+  reference: https://neu-data.github.io/mypackage/reference
+  article: https://neu-data.github.io/mypackage/articles
