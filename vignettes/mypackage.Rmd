@@ -1,0 +1,37 @@
+---
+title: "Getting started with mypackage"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting started with mypackage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.width = 7, fig.height = 4)
+```
+
+```{r setup}
+library(mypackage)
+library(ggplot2)
+```
+
+## Summarising data
+
+`summarise_by_group()` gives a quick descriptive summary by group:
+
+```{r}
+summarise_by_group(ToothGrowth, "len", "supp")
+```
+
+## Neudata-styled figures
+
+Use `theme_neudata()` with `scale_colour_neudata()` or `scale_fill_neudata()`:
+
+```{r}
+ggplot(ToothGrowth, aes(factor(dose), len, fill = supp)) +
+  geom_boxplot(alpha = 0.85) +
+  scale_fill_neudata(name = "Supplement") +
+  labs(x = "Dose (mg/day)", y = "Tooth length") +
+  theme_neudata()
+```

@@ -1,0 +1,45 @@
+url: https://neu-data.github.io/mypackage/
+
+template:
+  bootstrap: 5
+  bslib:
+    primary: "#055F56"
+    secondary: "#0B376C"
+    navbar-bg: "#04242F"
+    link-color: "#0B376C"
+    headings-color: "#04242F"
+    base_font: {google: "Source Sans 3"}
+    heading_font: {google: "Source Sans 3"}
+    code_font: {google: "JetBrains Mono"}
+
+navbar:
+  bg: primary
+  type: dark
+  structure:
+    left: [intro, reference, articles, news]
+    right: [search, neudata, github]
+  components:
+    neudata:
+      icon: fa-globe
+      href: https://www.neu-data.com
+      aria-label: Neudata website
+
+footer:
+  structure:
+    left: neudata
+    right: built_with
+  components:
+    neudata: "Developed by [**Neudata Consulting Ltd**](https://www.neu-data.com) · *Insight. Impact. Innovation.*"
+
+home:
+  sidebar:
+    structure: [links, license, community, citation, authors, dev]
+
+reference:
+  - title: Analysis helpers
+    contents:
+      - summarise_by_group
+  - title: Neudata look and feel
+    contents:
+      - neudata_palette
+      - theme_neudata

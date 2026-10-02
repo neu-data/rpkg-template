@@ -1,0 +1,26 @@
+Package: mypackage
+Title: One-Line Title in Title Case
+Version: 0.1.0
+Authors@R: c(
+    person("Analyst", "Name", , "analyst@neu-data.com", role = c("aut", "cre")),
+    person("Neudata Consulting Ltd", role = c("cph", "fnd"))
+  )
+Description: A paragraph describing what the package does, for whom, and
+    which methods it implements. Developed by Neudata Consulting Ltd.
+License: MIT + file LICENSE
+URL: https://neu-data.github.io/mypackage/, https://github.com/neu-data/mypackage
+BugReports: https://github.com/neu-data/mypackage/issues
+Depends:
+    R (>= 4.1)
+Imports:
+    ggplot2,
+    stats
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.0.0
